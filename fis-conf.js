@@ -11,3 +11,12 @@ fis.match('::packager', {
 fis.match('*.{css,less}', {
   packTo: '/static/aio.css'
 });
+
+fis.match('*.js', {
+	packTo: '/static/aio.js'
+});
+
+fis.match('*.less', {
+	parser: fis.plugin('less'),
+	rExt: '.css'
+});
